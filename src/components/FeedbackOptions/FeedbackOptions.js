@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
+// import s from './FeedbackOptions.module.css'
 
-const feedBackOptions = ({ options, onLeaveFeedback }) => {
+const FeedBackOptions = ({ options, onLeaveFeedback }) => {
   return options.map(button => {
     return (
       <button
@@ -15,9 +16,9 @@ const feedBackOptions = ({ options, onLeaveFeedback }) => {
   });
 };
 
-feedBackOptions.propTypes = {
+FeedBackOptions.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string.isRequired),
   onLeaveFeedback: PropTypes.func.isRequired,
 };
 
-export default feedBackOptions;
+export default FeedBackOptions;
